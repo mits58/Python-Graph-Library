@@ -20,16 +20,11 @@ class Graph:
         self.adj_mat = A
         self.is_directed = is_directed
 
-        self._count_vertex()
-        self._count_edge()
-
-    def _count_vertex(self):
         if self.adj_mat is not None:
             self.num_vertex = self.adj_mat.shape[0]
         else:
             self.num_vertex = 0
 
-    def _count_edge(self):
         if self.adj_mat is not None:
             self.num_edge = np.sum(self.adj_mat) // 2
         else:
