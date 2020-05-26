@@ -1,21 +1,13 @@
-# choose language
 language: python
-
-# choose version
-python: 
-  - 3.4
-  - 3.5
-  - 3.6
-  - 3.7
-  - 3.8
-
-# install packages
+python:
+- 3.4
+- 3.5
+- 3.6
+- 3.7
+- 3.8
 install:
-  - pip install numpy
-
-# set a notification (use slack)
+- pip install numpy
 notifications:
-  slack: mits58:XLrphvmIDW5FHMTQCUeOCq4h
-
-# do test!
-script: python -m unittest discover  
+  slack:
+    secure: esWFQW0rgrDVYzkx1N8Tvwexwx0eUIofRiYb7BENQ/epesvW4CmZrP6CAMG0cla6/GZzeMnTcjUy5DNMZGLSAnAapZUIYZgry+0mmrxHH4wMsiVkqrf3dR2ZP5Gan13nJYpxA3DGOqrrKoltmKag5XiPeRGnzgXUjdNlzShU+zIzEjwVleMtZygkeANMIJrD+wRnFV7BhM0xUHrCOYc73XuWPY9/aB/utkwx3aBSMZgujJa9KqgwxHfyC10HF0iKWajS6PeGt4LytkBTlQDYFICMH4yeRdyJuBX5pTdLuvFnxwsBzjaJ9OadpaSyelDbMyt5+XURiUzp88HqFx8dUF8mEWnzLWO0lwrCd99RUzzoH1irnecqvt2qZDNrXY2T/as6H+RtkEoxvLvt/Jodiul95B+6lJwVD8o3y0GhhlwfhJIqLY8MWoD1iFgsPVF8+DImT3OSVxazVSJEX9/zNXQfiNqB7ysksw6gdCjccRb4Z8lp+two+Juv4qncInS23khd76Z2EdIU9CngnWOw8WGkI1I0xtf+MnTnkK93MH59TdawcEBCoNGlotuEFyHVXzOElGC7jtXkWIJ7hmwvR0Ls8vB+hgHVR06VqmgUpRah2okaRj/dnRpIcVnWwXvdEF95DuZOVaQDovdRH3z8tPcpWvpdaDl6fI/78bIq/Bo=
+script: python -m unittest discover
