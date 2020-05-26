@@ -1,3 +1,21 @@
+# choose language
 language: python
-python: 3.8
+
+# choose version
+python: 
+  - 3.4
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+
+# install packages
+install:
+  - pip install numpy
+
+# set a notification (use slack)
+notifications:
+  slack: mits58:XLrphvmIDW5FHMTQCUeOCq4h
+
+# do test!
 script: python -m unittest discover  
